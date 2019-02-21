@@ -12,11 +12,6 @@ function initializePage() {
   // your code here
   $('.likeBtn').click(function(e) {
     e.preventDefault();
-
-    gtag('event', 'click', {
-      event_category: 'like',
-      event_label: 'like',
-      value: 1
-    });
+    ga('send', 'event', 'like', 'click');
   });
 }
